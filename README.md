@@ -36,7 +36,7 @@ A table of their effects is provided below.
 
 | Event | Effect | Example |
 |---|---|---|
-| `TEXT` | Draw left-aligned text that may wrap around the screen | `basic 30 DATA "TEXT","Here is some text"` |
+| `TEXT` | Draw left-aligned text that may wrap around the screen | `30 DATA "TEXT","Here is some text"` |
 | `LIST` | Draw an unordered list | `40 DATA "LIST","First","Second","Third","END"` |
 | `SPACING` | Print `N` empty lines if `N>=0`, or print until the screen is almost full (for printing footers) if `N=-1` | `100 DATA "SPACING",-1` |
 | `COLORS` | Update the foreground and background colors, will take effect on slide transition | `50 DATA "COLORS",5,16` |
