@@ -1,5 +1,5 @@
 SRC=src
-OUT=$(SRC)/slideshow99.bas
+OUT=$(SRC)/presenter99.bas
 
 FILES = $(filter-out $(OUT), $(shell find src -name "*.bas"))
 

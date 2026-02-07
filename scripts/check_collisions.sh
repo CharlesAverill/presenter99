@@ -10,7 +10,7 @@ declare -A line_files
 collision_found=false
 
 # Scan all .bas files
-find "$dir" -type f -not -name "slideshow99.bas" | while read -r file; do
+find "$dir" -type f -not -name "presenter99.bas" | while read -r file; do
     [ -f "$file" ] || continue
     
     # Extract line numbers from this file

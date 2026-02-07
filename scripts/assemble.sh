@@ -1,11 +1,11 @@
 #!/bin/bash
 dir=src
-out="$dir/slideshow99.bas"
+out="$dir/presenter99.bas"
 rm -f $out
 touch $out
 
 # Recursively find all files, extract numbers, sort, and concatenate
-find "$dir" -type f -not -name "slideshow99.bas" | while read -r file; do
+find "$dir" -type f -not -name "presenter99.bas" | while read -r file; do
 
     # Skip if not a regular file
     [ -f "$file" ] || continue

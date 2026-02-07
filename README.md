@@ -2,12 +2,12 @@
 
 Presenter99 is a slideshow engine written in BASIC for the [TI-99/4A](https://en.wikipedia.org/wiki/TI-99/4A).
 
-![example slideshow](media/slideshow99.gif)
+![example slideshow](media/presenter99.gif)
 
 ## Usage
 
 Slideshows are encoded in the engine program as `DATA` commands between lines 1-1899.
-Simply edit [template.bas](src/template.bas) and run `make` to generate [slideshow99.bas](src/slideshow99.bas).
+Simply edit [template.bas](src/template.bas) and run `make` to generate [presenter99.bas](src/presenter99.bas).
 This program can be copied into an emulator such as Classic99.
 Exporting to WAV files for cassette storage is planned.
 

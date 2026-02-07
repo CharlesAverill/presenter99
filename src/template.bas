@@ -13,4 +13,4 @@
 95 DATA "PAUSE"
 
 100 DATA "SPACING",-1
-110 DATA "TEXT","Made with Slideshow99"
+110 DATA "TEXT","Made with Presenter99"

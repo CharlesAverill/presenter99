@@ -9,7 +9,7 @@
 90 DATA "TEXT","presentation!"
 95 DATA "PAUSE"
 100 DATA "SPACING",-1
-110 DATA "TEXT","Made with Slideshow99"
+110 DATA "TEXT","Made with Presenter99"
 1900 REM = DEFINES =
 1910 DEF CENTERCOL(S$)=((32-LEN(S$))/2)-1
 2000 DATA "END_SLIDESHOW"

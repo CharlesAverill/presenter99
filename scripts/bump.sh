@@ -31,9 +31,9 @@ echo
 declare -A line_map
 
 # First pass: build the mapping from ALL files
-find "$dir" -type f -not -name "slideshow99.bas" | while read -r file; do
+find "$dir" -type f -not -name "presenter99.bas" | while read -r file; do
     [ -f "$file" ] || continue
-    [ "$(basename "$file")" = "slideshow99.bas" ] && continue
+    [ "$(basename "$file")" = "presenter99.bas" ] && continue
     
     while IFS= read -r line; do
         if [[ "$line" =~ ^[[:space:]]*[0-9]+ ]]; then
@@ -47,9 +47,9 @@ find "$dir" -type f -not -name "slideshow99.bas" | while read -r file; do
 done
 
 # Second pass: update ALL files
-find "$dir" -type f -not -name "slideshow99.bas" | while read -r file; do
+find "$dir" -type f -not -name "presenter99.bas" | while read -r file; do
     [ -f "$file" ] || continue
-    [ "$(basename "$file")" = "slideshow99.bas" ] && continue
+    [ "$(basename "$file")" = "presenter99.bas" ] && continue
     
     temp=$(mktemp)
     modified=false
