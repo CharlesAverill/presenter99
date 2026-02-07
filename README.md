@@ -8,7 +8,7 @@ Slideshow99 is a slideshow engine written in BASIC for the [TI-99/4A](https://en
 
 Slideshows are encoded in the engine program as `DATA` commands between lines 1-1899.
 Simply edit [template.bas](src/template.bas) and run `make` to generate [slideshow99.bas](src/slideshow99.bas).
-This program can be copied in to an emulator such as Classic99.
+This program can be copied into an emulator such as Classic99.
 Exporting to WAV files for cassette storage is planned.
 
 ### Format
