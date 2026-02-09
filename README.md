@@ -2,7 +2,7 @@
 
 Presenter99 is a slideshow engine written in BASIC for the [TI-99/4A](https://en.wikipedia.org/wiki/TI-99/4A).
 
-![example slideshow](media/presenter99.gif)
+![example slideshow](media/presenter99v1.2.gif)
 
 ## Usage
 
@@ -41,3 +41,27 @@ A table of their effects is provided below.
 | `SPACING` | Print `N` empty lines if `N>=0`, or print until the screen is almost full (for printing footers) if `N=-1` | `100 DATA "SPACING",-1` |
 | `COLORS` | Update the foreground and background colors, will take effect on slide transition | `50 DATA "COLORS",5,16` |
 | `PAUSE` | Pause in the middle of a slide | `95 DATA "PAUSE"` |
+| `BIGIMG` | Denotes an image slide (see below) | `180 DATA "BIGIMG", 20, "TI-99/4A"` |
+
+### Images
+
+The `BIGIMG` token denotes two series of data:
+
+1. A sequence of custom 8x8 character definitions to be passed into `CALL CHAR`
+2. A run-length encoded (RLE) sequence of characters to fill the screen
+
+Although possible, it's not recommended to generate these by hand.
+[imgconverter.py](scripts/imgconverter.py) will take in an image file, a starting BASIC line, and a maximum number of characters, and generate a BASIC file with the encoded image.
+
+Images are monochrome.
+This could be adjusted, as characters occupy four groups of 8, so `CALL COLOR` could assign unique foreground and background colors to each image.
+This would require some pretty hefty modification of the conversion script though.
+
+Even with RLE, these images are very large.
+The template barely fits two in.
+Perhaps a future version will support loading from disks or cassettes.
+
+| Original Image | Converted Image | Encoded Image |
+| --- | --- | --- |
+| ![shapes.jpg](media/shapes.jpg) | ![shapes_conv.png](media/shapes_conv.png) | [shapes.bas](media/shapes.bas) |
+| ![ti99.jpg](media/ti99.jpg) | ![ti99_conv.png](media/ti99_conv.png) | [ti99.bas](media/ti99.bas) |

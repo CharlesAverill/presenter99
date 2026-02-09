@@ -20,6 +20,6 @@ find "$dir" -type f -not -name "presenter99.bas" | while read -r file; do
     echo -e "$number\t$file"
 done | sort -n | while IFS=$'\t' read -r num file; do
     # Concatenate files in sorted order, removing empty lines
-    grep -v '^[[:space:]]*$' "$file" >> $out
+    grep -v '^[[:space:]]*$' "$file" | sed 's/REM.*$/REM/' >> "$out"
 done
 echo "Wrote to $out"
