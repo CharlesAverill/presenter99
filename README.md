@@ -41,7 +41,7 @@ A table of their effects is provided below.
 | `SPACING` | Print `N` empty lines if `N>=0`, or print until the screen is almost full (for printing footers) if `N=-1` | `100 DATA "SPACING",-1` |
 | `COLORS` | Update the foreground and background colors, will take effect on slide transition | `50 DATA "COLORS",5,16` |
 | `PAUSE` | Pause in the middle of a slide | `95 DATA "PAUSE"` |
-| `BIGIMG` | Denotes an image slide (see below) | `180 DATA "BIGIMG", 20, "TI-99/4A"` |
+| `BIGIMG` | Denotes an image slide (see below). Title appears while characters are loading | `180 DATA "BIGIMG", 20, "TI-99/4A"` |
 
 ### Images
 
